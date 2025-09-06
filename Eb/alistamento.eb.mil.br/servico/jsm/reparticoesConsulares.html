@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<!-- Mirrored from alistamento.eb.mil.br/servico/jsm/reparticoesConsulares by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Sep 2025 03:47:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Alistamento Militar ONLINE - Brasil">
+  <meta name="keywords" content="alistamento militar, exercito, marinha, aeronautica, fab, jovem Brasileiro, alistamento exterior, forcas armadas, serviço militar">
+
+  <title>ALISTAMENTO MILITAR ONLINE | Diretoria de Servi&ccedil;o Militar</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x66" href="../../assets/images/favicons/favicon-96x96.png">
+
+  <link rel="manifest" href="../../assets/manifest.json">
+  
+  <meta name="msapplication-TileColor" content="#333300">
+  <meta name="msapplication-TileImage" content="../../assets/images/favicons/favicon-96x96.png">
+  <meta name="theme-color" content="#333300">
+
+  <script src="../../../cdn.jsdelivr.net/npm/jquery%403.7.1/dist/jquery.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="../../../cdn.jsdelivr.net/npm/bootstrap%405.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../../../use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<!-- 
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css" />
+ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&amp;display=swap">
+
+  <link rel="stylesheet" type="text/css" href="../../assets/lib/alertify/alertify.min.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/lib/alertify/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/lib/datatables/datatables.min.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/lib/datetimepicker/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/ie_fix.css">
+
+</head>
+
+<body style="padding-top: 100px;">
+
+  <!-- Fixed Top Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top main-navigation pt-0" id="fixedTopNav" style="background-color: black;">
+
+    <div class="container">
+
+      <!-- Logo -->
+      <div class="navbar-brand">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu">
+          <span class="navbar-toggler-icon"><i class="fas fa-inverse fa-bars" aria-hidden="true"></i></span>
+        </button>
+        
+        <a itemprop="url" href="../../index.html" style="text-decoration: none;">ALISTAMENTO<em>ONLINE</em></a>
+
+      </div>
+          
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto" role="list">
+          <!-- 
+          <li class="nav-item"><a class="nav-link" href="/alistamento-feminino"><span class="text-warning">Alistamento Feminino</span></a></li>
+          -->
+          <li class="nav-item"><a class="nav-link" href="../../lista-servicos.html"><span>Servi&ccedil;os</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="../../help/faq.html"><span>Perguntas Frequentes</span></a></li>
+        </ul>
+      </div>
+
+      </div>
+    
+  </nav>
+  <!-- /Fixed Top Navigation -->
+
+  <!-- Body -->
+  <section class="section">
+
+  <!--   <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+ -->
+  <script type="text/javascript" src="../../assets/lib/datatables/datatables.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){$('#tabJsm').dataTable(dataTableDef);});
+  </script>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-sm-12">
+
+      <h3 class="text-center"><strong>Locais de Atendimento</strong></h3>
+
+      <hr class="mt-0 mb-2"/>
+
+      <form action="https://alistamento.eb.mil.br/servico/jsm/listar" method="post">
+
+        <input type="hidden" name="_csrf" value="6eddc1af-2c28-4510-b1d6-aba88c626157"/>
+        <div class="row g-1 align-items-center">
+          <div class="col">
+            <input type="text" class="form-control" id="desc" name="local" maxlength="250" placeholder="Nome do município"/>
+          </div>
+          <div class="col">
+            <button type="submit" class="btn btn-primary"><i class="fas fa-search me-1" aria-hidden="true"></i>Pesquisar</button>
+          </div>
+        </div>
+      </form>
+      
+      <table class="table table-striped" id="tabJsm">
+            <caption>lista de jsm</caption>
+            <thead>
+              <tr><th scope="col">JSM</th><th scope="col">Endere&ccedil;o</th><th scope="col">Telefone</th><th scope="col">e-mail</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style='max-width: 5em'>99/001 - COSTA DO MARFIM - EMBAIXADA EM ABIDJA </td>
+                <td style='max-width: 10em'>IMMEUBLE ALPHA 2000 - ABIDJÃ</td>
+                <td style='max-width: 7em'>(225)20222341</td>
+                <td style='max-width: 15em'>brasemb.abidja@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/003 - ETIOPIA - EMBAIXADA EM ADIS ABEBA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/005 - TURQUIA - EMBAIXADA EM ANCARA </td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/006 - ARGELIA - EMBAIXADA EM ARGEL</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/007 - URUGUAY - VICECONSULADO EM ARTIGAS</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/008 - PARAGUAI - CONSULADO EM ASSUNCAO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/009 - GRECIA - EMBAIXADA EM ATENAS</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/010 - IRAQUE - EMBAIXADA EM BAGDA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/011 - TAILANDIA - EMBAIXADA EM BANGKOK</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/013 - LIBANO - CONSULADO EM BEIRUTE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/015 - BELIZE - EMBAIXADA EM BELMOPAN</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/017 - GUINE-BISSAU - EMBAIXADA EM BISSAU</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/023 - HUNGRIA - EMBAIXADA EM BUDAPESTE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/025 - GUIANA FRANCESA - CONSULADO EM CAIENA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/029 - EUA - CONSULADO EM CHICAGO</td>
+                <td style='max-width: 10em'>401 NORTH MICHIGAN AVENUE, SUITE 1850 - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/030 - URUGUAY - CONSULADO EM CHUI</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/031 - AFRICA DO SUL - CONSULADO EM CIDADE DO CABO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/032 - CINGAPURA - EMBAIXADA EM CINGAPURA</td>
+                <td style='max-width: 10em'>101 THOMSON ROAD, #29-01/03 - N/D</td>
+                <td style='max-width: 7em'>+65 6603 - 9361</td>
+                <td style='max-width: 15em'>consular.cingapura@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/034 - VENEZUELA - CONSULADO EM CIUDAD GUAYANA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/035 - BOLIVIA - CONSULADO EM COBIJA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/037 - PARAGUAI - VICE CONSULADO EM CONCEPCION</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/038 - DINAMARCA - EMBAIXADA EM COPENHAGUE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/041 - SIRIA - EMBAIXADA EM DAMASCO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/043 - TIMOR LESTE - EMBAIXADA EM DILI</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/044 - CATAR - EMBAIXADA EM DOHA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/046 - PARAGUAI - VICE CONSULADO EM ENCARNACION</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/050 - GUIANA - EMBAIXADA EM GEORGETOWN</td>
+                <td style='max-width: 10em'>308/309 CHURCH STREET - QUEENSTOWN</td>
+                <td style='max-width: 7em'>5922317182</td>
+                <td style='max-width: 15em'>CONSULAR.GEORGETOWN@ITAMARATY.GOV.BR</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/051 - GUATEMALA - EMBAIXADA EM GUATEMALA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/052 - BOLIVIA - CONSULADO EM GUAYARAMERIN</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/053 - VIETNAM - EMBAIXADA EM HANOI</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/054 - ZIMBABUE - EMBAIXADA EM HARARE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/055 - CUBA - EMBAIXADA EM HAVANA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/056 - FINLANDIA - EMBAIXADA EM HELSINKI</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/057 - CHINA - CONSULADO EM HONG KONG</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/058 - EUA - CONSULADO EM HOUSTON</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/059 - CAMAROES - EMBAIXADA EM IAUNDE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/060 - PERU - CONSULADO EM IQUITOS</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/061 - PAQUISTAO - EMBAIXADA EM ISLAMABADE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/064 - JAMAICA - EMBAIXADA EM KINGSTON</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/065 - CONGO - EMBAIXADA EM KINSHASA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/066 - KUAITE - EMBAIXADA EM KUAITE</td>
+                <td style='max-width: 10em'>WEST MISHEREF, BLOCK 01, STREET 116, VILLA 47 - MUBARAK ABDALLAH AL JABER AREA</td>
+                <td style='max-width: 7em'>25378561</td>
+                <td style='max-width: 15em'>consular.kuaite@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/067 - MALASIA - EMBAIXADA EM KUALA LUMPUR</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/069 - NIGERIA - CONSULADO EM LAGOS</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/070 - COLOMBIA - VICE CONSULADO EM LETICIA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/071 - GABAO - EMBAIXADA EM LIBREVILLE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/072 - PERU - EMBAIXADA EM LIMA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/074 - REINO UNIDO - CONSULADO EM LONDRES</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/075 - EUA - CONSULADO EM LOS ANGELES</td>
+                <td style='max-width: 10em'>8484 WILSHIRE BLVD #300 - BEVERLY HILLS, CALIF EUA</td>
+                <td style='max-width: 7em'>3236512664</td>
+                <td style='max-width: 15em'>INFO.LOSANGELES@ITAMARATY.GOV.BR</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/076 - ANGOLA - EMBAIXADA EM LUANDA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/077 - ESPANHA - CONSULADO EM MADRI</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/079 - FILIPINAS - EMBAIXADA EM MANILA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/080 - MOCAMBIQUE - EMBAIXADA EM MAPUTO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/084 - URUGUAY - CONSULADO EM MONTEVIDEU</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/085 - CANADA - CONSULADO EM MONTREAL</td>
+                <td style='max-width: 10em'> WESTMOUNT SQUARE, NO. 1, SUITE 1700 - WESTMOUNT, QUEBEC, CANADÁ</td>
+                <td style='max-width: 7em'>514-499-0968</td>
+                <td style='max-width: 15em'>NOTARIAL.MONTREAL@ITAMARATY.GOV.BR</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/089 - QUENIA - EMBAIXADA EM NAIROBI</td>
+                <td style='max-width: 10em'>121 UN Crescent Road - Gigiri</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>consular.nairobi@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/090 - INDIA - EMBAIXADA EM NOVA DELHI</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/093 - CANADA - EMBAIXADA EM OTAWA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/094 - PANAMA - EMBAIXADA EM CIDADE DO PANAMA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/095 - SURINAME - EMBAIXADA EM PARAMARIBO</td>
+                <td style='max-width: 10em'>MARATAKASTRAAT NR. 02 - ZORG EN HOOP </td>
+                <td style='max-width: 7em'>400200</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/097 - ARGENTINA - VICE CONSULADO EM PASO DE LOS LIBRES</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/098 - PARAGUAI - CONSULADO EM PEDRO JUAN CABALLERO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/101 - PORTUGAL - CONSULADO EM PORTO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/102 - HAITI - EMBAIXADA EM PORTO PRINCIPE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/103 - REPUBLICA TCHECA - EMBAIXADA EM PRAGA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/104 - CABO VERDE - EMBAIXADA EM PRAIA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/105 - AFRICA DO SUL - EMBAIXADA EM PRETORIA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/106 - VENEZUELA - VICE CONSULADO EM PUERTO AYACUCHO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/107 - ARGENTINA - VICE CONSULADO EM PUERTO IGUAZU</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/108 - BOLIVIA - CONSULADO EM PUERTO SUAREZ</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/111 - ARABIA SAUDITA - EMBAIXADA EM RIAD</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/112 - URUGUAY - VICE CONSULADO EM RIO BRANCO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/113 - URUGUAY - CONSULADO EM RIVERA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/115 - HOLANDA - CONSULADO EM AMSTERDA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/118 - VENEZUELA - VICE CONSULADO EM SANTA ELENA DE UAIREN</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/120 - REPUBLICA DOMINICANA - EMBAIXADA EM SAO DOMINGOS</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/124 - SAO TOME E PRINCIPE - EMBAIXADA EM SAO TOME</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/126 - BULGARIA - EMBAIXADA EM SOFIA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/127 - AUSTRALIA - CONSULADO EM SYDNEY</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/128 - IRA - EMBAIXADA EM TEERA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/129 - HONDURAS - EMBAIXADA EM TEGUCIGALPA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/133 - LIBIA - EMBAIXADA EM TRIPOLI</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/134 - TUNISIA - EMBAIXADA EM TUNIS</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/135 - POLONIA - EMBAIXADA EM VARSOVIA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/136 - VATICANO - EMBAIXADA EM CIDADE DO VATICANO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/138 - EUA - CONSULADO EM WASHINGTON</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/139 - NOVA ZELANDIA - EMBAIXADA EM WELLINGTON</td>
+                <td style='max-width: 10em'>10, CUSTOMHOUSE QUAY, LEVEL 15 MARITIME TOWER WELLINGTON 6011 - WELLINGTON CENTRAL</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>consular.wellington@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/140 - NAMIBIA - EMBAIXADA EM WINDHOEK</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/142 - SUICA - CONSULADO EM ZURIQUE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/143 - SULTANATO DE OMAN - EMBAIXADA EM MASCATE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/213 - VENEZUELA - EMBAIXADA EM CARACAS</td>
+                <td style='max-width: 10em'>CALLE LOS CHAGUARAMOS, CENTRO GERENCIAL MOHEDANO - PISO 6, CARACAS, VENEZUELA - LA CASTELLANA</td>
+                <td style='max-width: 7em'>+58(212)9186000</td>
+                <td style='max-width: 15em'>pedro.guerreiro@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/144 - EUA - CONSULADO EM ATLANTA</td>
+                <td style='max-width: 10em'>3500 LENOX RD, SUITE 800, ATLANTA, GA - N/D</td>
+                <td style='max-width: 7em'>404-9491212</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/156 - SRI LANKA - EMBAIXADA EM COLOMBO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/157 - EUA - CONSULADO EM HARTFORD</td>
+                <td style='max-width: 10em'>1 CONSTITUTION PLAZA, HARTFORD, CT - EUA - N/D</td>
+                <td style='max-width: 7em'>8607603100</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/153 - ARGENTINA - CONSULADO EM MENDONZA</td>
+                <td style='max-width: 10em'>RIVADAVIA, 628 - CENTRO - MENDOZA</td>
+                <td style='max-width: 7em'>542614230939</td>
+                <td style='max-width: 15em'>cg.mendoza@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/158 - EMIRADOS ARABES UNIDOS - EMBAIXADA EM ABU DHABI</td>
+                <td style='max-width: 10em'>RUA 5, VILA 6 - MADINAT ZAYED</td>
+                <td style='max-width: 7em'>971-26320606</td>
+                <td style='max-width: 15em'>consular.abudhabi@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/161 - NIGERIA - EMBAIXADA EM ABUJA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/163 - MALI - EMBAIXADA EM BAMAKO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/209 - TAIWAN - ESCRITORIO COMERCIAL EM TAIPE</td>
+                <td style='max-width: 10em'>2F, NO. 45, DEXING WEST ROAD, SHIHLIN DISTRICT - TAIPÉ</td>
+                <td style='max-width: 7em'>886228389705</td>
+                <td style='max-width: 15em'>consular.taipe@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/119 - CHILE - CONSULADO EM SANTIAGO</td>
+                <td style='max-width: 10em'>LOS MILITARES 6191 1 ANDAR - LAS CONDES</td>
+                <td style='max-width: 7em'>5628205800</td>
+                <td style='max-width: 15em'>cg.santiago@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/169 - GUIANA FRANCESA - CONSULADO EM SAINT GEORGES DE LOYAPOCK</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/171 - CAZAQUISTAO - EMBAIXADA EM ASTANA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/172 - AZERBAIJAO - EMBAIXADA EM BAKU</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/173 - SAO CRISTOVAO E NEVIS - EMBAIXADA EM BASSETERRE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/174 - CONGO - EMBAIXADA EM BRAZZAVILLE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/175 - AFEGANISTAO - EMBAIXADA EM CABUL</td>
+                <td style='max-width: 10em'>INFORME O ENDEREÇO - INFORME O BAIRRO</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/176 - SUDAO - EMBAIXADA EM CARTUM</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/177 - SANTA LUCIA - EMBAIXADA EM CASTRIES</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/178 - GUINE - EMBAIXADA EM CONACRI</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/179 - BENIN - EMBAIXADA EM COTONOU</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/180 - BANGLADESH - EMBAIXADA EM DACA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/181 - SERRA LEOA - EMBAIXADA EM FREETOWN</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/182 - BOTSUANA - EMBAIXADA EM GABORONE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/183 - ARMENIA - EMBAIXADA EM IEREVAN</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/184 - NEPAL - EMBAIXADA EM KATMANDU</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/185 - SAO VICENTE E GRANADINAS - EMBAIXADA EM KINGSTOWN</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/186 - MALAUI - EMBAIXADA EM LILONGUE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/188 - TOGO - EMBAIXADA EM LOME</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/189 - ZAMBIA - EMBAIXADA EM LUSACA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/190 - GUINE EQUATORIAL - EMBAIXADA EM MALABO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/191 - BELARUS - EMBAIXADA EM MINSK</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/192 - LIBERIA - EMBAIXADA EM MONROVIA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/194 - CHIPRE - EMBAIXADA EM NICOSIA</td>
+                <td style='max-width: 10em'>ACHAION 14 - AYIOS ANDREAS</td>
+                <td style='max-width: 7em'>35722592300</td>
+                <td style='max-width: 15em'>brasemb.nicosia@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/195 - MAURITANIA - EMBAIXADA EM NOUACKCHOTT</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/196 - COREIA DO NORTE - EMBAIXADA EM PYONGYANG</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/197 - DOMINICA - EMBAIXADA EM ROSEAU</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/198 - GRANADA - EMBAIXADA EM SAINT GEORGES</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/199 - ANTIGUA E BARBUDA - EMBAIXADA EM SAINT JOHNS</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/200 - BOSNIA E HERZEGOVINA - EMBAIXADA EM SARAJEVO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/201 - ESTONIA - EMBAIXADA EM TALIN</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/202 - GEORGIA - EMBAIXADA EM TBILISI</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/203 - ALBANIA - EMBAIXADA EM TIRANA</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/204 - BURKINA FASO - EMBAIXADA EM UAGADUGU</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/205 - MYANMAR - EMBAIXADA EM YANGON</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/206 - CROACIA - EMBAIXADA EM ZAGREB</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/208 - GUIANA - VICE CONSULADO EM LETHEM</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/027 - AUSTRALIA - EMBAIXADA EM CAMBERRA</td>
+                <td style='max-width: 10em'>19 FORSTER CRESCENT - YARRALUMLA</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/016 - ALEMANHA - EMBAIXADA EM BERLIM</td>
+                <td style='max-width: 10em'>WALLSTR. 57 - BERLIM</td>
+                <td style='max-width: 7em'>+493072628700</td>
+                <td style='max-width: 15em'>alistamento.berlim@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/096 - FRANCA - CONSULADO EM PARIS</td>
+                <td style='max-width: 10em'>65 AVENUE FRANKLIN DELANO ROOSEVELT  - PARIS</td>
+                <td style='max-width: 7em'>0066145618585</td>
+                <td style='max-width: 15em'>consulat.cgparis@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/012 - ESPANHA - CONSULADO EM BARCELONA</td>
+                <td style='max-width: 10em'>AV. DIAGONAL, 468 - BARCELONA / BARCELONA CEP: 08006</td>
+                <td style='max-width: 7em'>93 488 22 88 </td>
+                <td style='max-width: 15em'>documentos.barcelona@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/047 - SUECIA - EMBAIXADA EM ESTOCOLMO</td>
+                <td style='max-width: 10em'>ODENGATAN 3 - ESTOCOLMO</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>consular.estocolmo@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/168 - INDIA - CONSULADO EM MUMBAI</td>
+                <td style='max-width: 10em'>FREE PRESS HOUSE, FREE PRESS JOURNAL MARG, UNITS 113 & 114 - NARIMAN POINT</td>
+                <td style='max-width: 7em'>22834467</td>
+                <td style='max-width: 15em'>CONSBRASMUMBAI@GMAIL.COM</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/164 - CHINA - CONSULADO EM CANTAO</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/165 - PORTUGAL - CONSULADO EM FARO</td>
+                <td style='max-width: 10em'>LARGO DOM MARCELINO FRANCO, 2 - CENTRO - FARO - PORTUGAL</td>
+                <td style='max-width: 7em'>351289096193</td>
+                <td style='max-width: 15em'>consular.faro@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/166 - TURQUIA - CONSULADO EM ISTAMBUL</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/170 - CANADA - CONSULADO EM VANCOUVER</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/130 - ISRAEL - EMBAIXADA EM TEL AVIV</td>
+                <td style='max-width: 10em'>YEHUDA HALEVI 23, 30TH FLOOR, TEL AVIV - ISRAEL - N/D</td>
+                <td style='max-width: 7em'>+972 3 797-1500</td>
+                <td style='max-width: 15em'>consular.telaviv@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/020 - BARBADOS - EMBAIXADA EM BRIDGETOWN</td>
+                <td style='max-width: 10em'>HY BRASIL, THE COURTYARD, HASTINGS, - CHRIST CHURCH</td>
+                <td style='max-width: 7em'>12464271735</td>
+                <td style='max-width: 15em'>consular.bridgetown@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/123 - EL SALVADOR - EMBAIXADA EM SAN SALVADOR</td>
+                <td style='max-width: 10em'>BOULEVARD SERGIO VIEIRA DE MELLO Nº 132 - COLONIA SAN BENITO, SAN SALVADOR</td>
+                <td style='max-width: 7em'>2298-2751</td>
+                <td style='max-width: 15em'>consular.ssalvador@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/048 - ALEMANHA - CONSULADO EM FRANKFURT</td>
+                <td style='max-width: 10em'>HANSAALLEE 32 A+B  - FRANKFURT AM MAIN</td>
+                <td style='max-width: 7em'>004969920 74235 </td>
+                <td style='max-width: 15em'>militar.frankfurt@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/063 - UCRANIA - EMBAIXADA EM KIEV</td>
+                <td style='max-width: 10em'>BRAZILIAN EMBASSY     BORICHIV TIK 22-A - N/D</td>
+                <td style='max-width: 7em'>00380444259364</td>
+                <td style='max-width: 15em'>consular.kiev@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/036 - BOLIVIA - CONSULADO EM COCHABAMBA</td>
+                <td style='max-width: 10em'>AVENIDA PORTALES 568 - QUERU-QUERU</td>
+                <td style='max-width: 7em'>591 4 4485033</td>
+                <td style='max-width: 15em'>consular.cochabamba@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/117 - BOLIVIA - CONSULADO EM SANTA CRUZ DE LA SIERRA</td>
+                <td style='max-width: 10em'>AVENIDA MARCELO TERCEROS BANZER, 334 -  SANTA CRUZ DE LA SIERRA - BOLÍVIA</td>
+                <td style='max-width: 7em'>0059133447575</td>
+                <td style='max-width: 15em'>GERAL@CONSBRAS.ORG.BO</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/109 - EQUADOR - EMBAIXADA EM QUITO</td>
+                <td style='max-width: 10em'>AV AMAZONAS N39-123 Y JOSÉ ARÍZAGA - QUITO - EQUADOR</td>
+                <td style='max-width: 7em'>59322277000</td>
+                <td style='max-width: 15em'>consulado.quito@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/014 - SERVIA - EMBAIXADA EM BELGRADO</td>
+                <td style='max-width: 10em'>KRUNSKA, 14 - VRACAR</td>
+                <td style='max-width: 7em'>+381113239781</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/026 - EGITO - EMBAIXADA EM CAIRO</td>
+                <td style='max-width: 10em'>2005C CORNISH EL NIL NILE CITY NORTH TOWERS 18TH FLOOR - RAMLET BOULAC</td>
+                <td style='max-width: 7em'>+20 2 2461 9837</td>
+                <td style='max-width: 15em'>consular.cairo@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/193 - BAHAMAS - EMBAIXADA EM NASSAU</td>
+                <td style='max-width: 10em'>83 SHIRLEY STREET - NASSAU</td>
+                <td style='max-width: 7em'>12423567613</td>
+                <td style='max-width: 15em'>embaixada.nassau@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/187 - ESLOVENIA - EMBAIXADA EM LIUBLIANA</td>
+                <td style='max-width: 10em'>KONGRESNI TRG 3 - N/D</td>
+                <td style='max-width: 7em'>0038612442400</td>
+                <td style='max-width: 15em'>consular.liubliana@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/207 - PALESTINA - ESCRITORIO DE REPRESENTACAO EM RAMALA</td>
+                <td style='max-width: 10em'>AL BIREH - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/082 - EUA - CONSULADO EM MIAMI</td>
+                <td style='max-width: 10em'>3150 SW 38TH AVENUE SUITE 100 - MIAMI - EUA</td>
+                <td style='max-width: 7em'>1305 2856202</td>
+                <td style='max-width: 15em'>militar.miami@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/033 - PARAGUAI - CONSULADO EM CIUDAD DEL ESTE</td>
+                <td style='max-width: 10em'>CALLE PAMPLIEGA 205 - CENTRO</td>
+                <td style='max-width: 7em'>06150098</td>
+                <td style='max-width: 15em'>deleste@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/087 - ALEMANHA - CONSULADO EM MUNIQUE</td>
+                <td style='max-width: 10em'>SONNENSTRASSE 31    80331 MUNIQUE - N/D</td>
+                <td style='max-width: 7em'>0049 89 21037632</td>
+                <td style='max-width: 15em'>militar@consbras-munique.de</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/018 - COLOMBIA - EMBAIXADA EM BOGOTA</td>
+                <td style='max-width: 10em'>CALLE 93#14-20 - CHICO</td>
+                <td style='max-width: 7em'>572180800</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/019 - EUA - CONSULADO EM BOSTON</td>
+                <td style='max-width: 10em'>175 PURCHASE STREET - BOSTON / MA / EUA</td>
+                <td style='max-width: 7em'>617-542-4000</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/131 - JAPAO - CONSULADO EM TOQUIO</td>
+                <td style='max-width: 10em'>TOQUIO SHINAGAWA  - HIGASHI GOTANDA 1-13-12 ICHIGO GOTANDA BLDG 2/3F</td>
+                <td style='max-width: 7em'>81354885625</td>
+                <td style='max-width: 15em'>militar.cgtoquio@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/088 - JAPAO - CONSULADO EM NAGOYA</td>
+                <td style='max-width: 10em'>AICHI NAGOYA NAKA MARUNOUCHI 1-10-29-2F - N/D</td>
+                <td style='max-width: 7em'>0522221079</td>
+                <td style='max-width: 15em'>militar.nagoia@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/114 - ITALIA - CONSULADO EM ROMA</td>
+                <td style='max-width: 10em'>PIAZZA PASQUINO, 8, ROMA/RM, ITÁLIA - N/D</td>
+                <td style='max-width: 7em'>066889661</td>
+                <td style='max-width: 15em'>passaporte.roma@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/091 - EUA - CONSULADO EM NOVA YORK</td>
+                <td style='max-width: 10em'>220 EAST 42ND STREET, 26TH FLOOR - NEW YORK, NY</td>
+                <td style='max-width: 7em'>9177777678</td>
+                <td style='max-width: 15em'>ALISTAMENTO.NOVAYORK@ITAMARATY.GOV.BR</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/125 - COREIA DO SUL - EMBAIXADA EM SEUL</td>
+                <td style='max-width: 10em'>73 CHEONGWADAERO IHN GALLERY BUILDING  - JONGNO-GU</td>
+                <td style='max-width: 7em'>+8227384970</td>
+                <td style='max-width: 15em'>consular.seul@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/073 - PORTUGAL - CONSULADO EM LISBOA</td>
+                <td style='max-width: 10em'>RUA ANTONIO MARIA CARDOSO, 39 - CHIADO</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/040 - SENEGAL - EMBAIXADA EM DACAR</td>
+                <td style='max-width: 10em'>RUE DE FATICK - IMMEUBLE ABDOULAYE SECK - 1º E 2º ANDAR - POINT E - DACAR</td>
+                <td style='max-width: 7em'>(221 33) 825 9400/ 825 1724</td>
+                <td style='max-width: 15em'>cosme.silva@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/039 - ARGENTINA - CONSULADO EM CORDOBA</td>
+                <td style='max-width: 10em'>AV. AMBROSIO OLMOS, 615 - NUEVA CÓRDOBA</td>
+                <td style='max-width: 7em'>+54351468-5919</td>
+                <td style='max-width: 15em'>consular.cordoba@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/028 - VENEZUELA - CONSULADO EM CARACAS</td>
+                <td style='max-width: 10em'>AV SAN JUAN BOSCO ENTRE 5TA E 6TA TRASNVERSAL ALTAMIRA QTA MONACO - CARACAS</td>
+                <td style='max-width: 7em'>02129567800</td>
+                <td style='max-width: 15em'>WOLNEY.ANTUNES@ITAMARATY.GOV.BR</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/042 - TANZANIA - EMBAIXADA EM DAR ES SALAAM</td>
+                <td style='max-width: 10em'>COCO PLAZA 201/202, MSASANI, DAR ES SALAM - N/D</td>
+                <td style='max-width: 7em'>+255777704126</td>
+                <td style='max-width: 15em'>pedro.simoes@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/049 - SUICA - CONSULADO EM GENEBRA</td>
+                <td style='max-width: 10em'>RUE DE LAUSANNE 45 - GENEBRA, SUIÇA</td>
+                <td style='max-width: 7em'>041229069420</td>
+                <td style='max-width: 15em'>cg.genebra@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/132 - CANADA - CONSULADO EM TORONTO</td>
+                <td style='max-width: 10em'>77 BLOOR STREET WEST - N/D</td>
+                <td style='max-width: 7em'>416-922-2503</td>
+                <td style='max-width: 15em'>info@consbrastoronto.org </td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/021 - BELGICA - CONSULADO EM BRUXELAS</td>
+                <td style='max-width: 10em'>RUE DU TRÔNE 108 - IXELLES</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/078 - NICARAGUA - EMBAIXADA EM MANAGUA</td>
+                <td style='max-width: 10em'>CARRETERA SUR KILOMETRO 7 TRES CUARTOS - CARRETERA SUR</td>
+                <td style='max-width: 7em'>505 22650035</td>
+                <td style='max-width: 15em'>CONSULAR@IBW.COM.BR</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/159 - ESLOVAQUIA - EMBAIXADA EM BRATISLAVA</td>
+                <td style='max-width: 10em'>PALISADY 47 - N/D</td>
+                <td style='max-width: 7em'>00421232181404</td>
+                <td style='max-width: 15em'>consular.bratislava@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/081 - MEXICO - CONSULADO EM CIDADE DO MEXICO</td>
+                <td style='max-width: 10em'>AVENIDA PASEO DE LAS PALMAS 215, 4 ANDAR - LOMAS DE CHAPULTEPEC</td>
+                <td style='max-width: 7em'>525541603953</td>
+                <td style='max-width: 15em'>CGMEXICO@ITAMARATY.GOV.BR</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/122 - COSTA RICA - EMBAIXADA EM SAN JOSE</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>N/D</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/116 - PARAGUAI - CONSULADO EM SALTOS DO GUAIRA</td>
+                <td style='max-width: 10em'>CALLE FRANCISCO CABALLERO ALVAREZ - N/D</td>
+                <td style='max-width: 7em'>595 46 242 305</td>
+                <td style='max-width: 15em'>cg.saltoguaira@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/002 - GANA - EMBAIXADA EM ACRA</td>
+                <td style='max-width: 10em'>#4, FIFTH LINK, OFF SENCHI STREET,  - AIRPORT RESIDENTIAL AREA</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>consular.acra@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/068 - BOLIVIA - EMBAIXADA EM LA PAZ</td>
+                <td style='max-width: 10em'>AVENIDA ARCE NO. 2299, EDIFICIO MULTICENTRO, TORRE B - SOPOCACHI</td>
+                <td style='max-width: 7em'>2166400</td>
+                <td style='max-width: 15em'>consular.lapaz@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/099 - CHINA - EMBAIXADA EM PEQUIM</td>
+                <td style='max-width: 10em'>GUANG HUA LU, 27 - PEQUIM  - CHAOYANG DISTRICT </td>
+                <td style='max-width: 7em'>(+8610) 6532-2881</td>
+                <td style='max-width: 15em'>consular.pequim@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/045 - IRLANDA - EMBAIXADA EM DUBLIN</td>
+                <td style='max-width: 10em'>N/D - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>GABRIEL.NEVES@ITAMARATY.GOV.BR</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/083 - ITALIA - CONSULADO EM MILAO</td>
+                <td style='max-width: 10em'>CORSO EUROPA, 12 - MILÃO, ITÁLIA</td>
+                <td style='max-width: 7em'>0039027771071</td>
+                <td style='max-width: 15em'>militar.milao@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/160 - JAPAO - CONSULADO EM HAMAMATSU</td>
+                <td style='max-width: 10em'>MOTOSHIRO-CHO KYODO BLDG 1F, 115-10 MOTOSHIRO-CHO NAKA-KU - HAMAMATSU-SHI SHIZUOKA-KEN</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>legalization.hamamatsu@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/004 - JORDANIA - EMBAIXADA EM AMA</td>
+                <td style='max-width: 10em'>RUA SULEIMAN YOUSIF SUKKAR, NR. 17 - ABDOUN</td>
+                <td style='max-width: 7em'>96265923941</td>
+                <td style='max-width: 15em'>consular.ama@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/121 - EUA - CONSULADO EM SAN FRANCISCO</td>
+                <td style='max-width: 10em'>300 MONTGOMERY STREET, SUITE 300 - SAO FRANCISCO, CA</td>
+                <td style='max-width: 7em'>+14159818170</td>
+                <td style='max-width: 15em'>consular3.sf@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/062 - INDONESIA - EMBAIXADA EM JAKARTA</td>
+                <td style='max-width: 10em'>MENARA MULIA SUITE 1602 JL. GATOT SUBROTO KAV. 9-11 - N/D</td>
+                <td style='max-width: 7em'>62 5265656</td>
+                <td style='max-width: 15em'>consular.jacarta@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/137 - AUSTRIA - EMBAIXADA EM VIENA</td>
+                <td style='max-width: 10em'>PESTALOZZIGASSE 4/1, VIENA, ÁUSTRIA - CENTRO</td>
+                <td style='max-width: 7em'>512 0632</td>
+                <td style='max-width: 15em'>notarial.viena@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/141 - CHINA - CONSULADO EM XANGAI</td>
+                <td style='max-width: 10em'>188 JIANG NING ROAD, ASA BUILDING, 7° ANDAR, SALA 703 - JING AN DISTRICT</td>
+                <td style='max-width: 7em'>(+8621) 64370110</td>
+                <td style='max-width: 15em'>brasileiros.xangai@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/024 - ARGENTINA - CONSULADO EM BUENOS AIRES</td>
+                <td style='max-width: 10em'>RUA CARLOS PELLEGRINI 1363 5º ANDAR - N/D</td>
+                <td style='max-width: 7em'>N/D</td>
+                <td style='max-width: 15em'>notariado.baires@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/022 - ROMENIA - EMBAIXADA EM BUCARESTE</td>
+                <td style='max-width: 10em'>BULERVARDUL AVIATORILOR 40, SECTOR 1 - BUCARESTE</td>
+                <td style='max-width: 7em'>+40212301130</td>
+                <td style='max-width: 15em'>zauder.castro@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/086 - RUSSIA - EMBAIXADA EM MOSCOU</td>
+                <td style='max-width: 10em'>ULITSA BOLSHAYA NIKITSKAYA 54 - N/D</td>
+                <td style='max-width: 7em'>+7 495 363 0366</td>
+                <td style='max-width: 15em'>consulado.moscou@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/110 - MARROCOS - EMBAIXADA EM RABAT</td>
+                <td style='max-width: 10em'>38, RUE MOHAMED BAHRAOUI - SOUISSI</td>
+                <td style='max-width: 7em'>212 537 57 27 30</td>
+                <td style='max-width: 15em'>consular.rabat@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/100 - TRINIDAD E TOBAGO - EMBAIXADA EM PORT SPAIN</td>
+                <td style='max-width: 10em'>18 SWEET BRIAR ROAD - SAINT CLAIR</td>
+                <td style='max-width: 7em'>+1 868 622-5771 / 5779</td>
+                <td style='max-width: 15em'>consularbrtt@gmail.com</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/092 - NORUEGA - EMBAIXADA EM OSLO</td>
+                <td style='max-width: 10em'>SIGURD SYRS GATE 2, OSLO - N/D</td>
+                <td style='max-width: 7em'>+47 22540730</td>
+                <td style='max-width: 15em'>CONSULAR.OSLO@ITAMARATY.GOV.BR</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/212 - FRANCA - CONSULADO EM MARSELHA</td>
+                <td style='max-width: 10em'>132 BOULEVARD MICHELET, SPACES, BUREAUX 338/336, 13008 - MARSEILLE, FRANCE</td>
+                <td style='max-width: 7em'>+330609023012</td>
+                <td style='max-width: 15em'>cg.marselha@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/210 - EUA - CONSULADO GERAL EM ORLANDO</td>
+                <td style='max-width: 10em'>355 NORTH ORANGE AVENUE, ORLANDO, FL, ESTADOS UNIDOS - ORLANDO</td>
+                <td style='max-width: 7em'>1(407)6750604</td>
+                <td style='max-width: 15em'>consular.orlando@itamaraty.gov.br</td>
+              </tr>
+              <tr>
+                <td style='max-width: 5em'>99/211 - REINO UNIDO - CONSULADO EM EDIMBURGO</td>
+                <td style='max-width: 10em'>9-10 ST ANDREW SQUARE, EDIMBURGH, SCOTLAND, EH22AF - N/D</td>
+                <td style='max-width: 7em'>+4407873261217</td>
+                <td style='max-width: 15em'>cgedinburgh@itamaraty.gov.br</td>
+              </tr>
+              </tbody>
+            <tfoot>
+              <tr><td colspan="4">&nbsp;</td></tr>
+            </tfoot>
+          </table>
+      </div>
+  </div>
+
+</div>
+  
+</section>  <!-- footer -->  <footer id="footer" class="footer">    <div class="container">    <div class="row">      <div class="col-md-3 col-sm-4">        <p class="copyright text-xs-center">&copy;2025 DSM</p>      </div>      <div class="col-md-5 col-sm-4">        <img src="../../assets/images/sermilmob.png" alt="SERMILMOB" height="70%" width="70%">      </div>      <div class="col-md-4 col-sm-4">        <div class="footer-menu text-xs-center">          <a href="http://dsm.dgp.eb.mil.br/">Diretoria de Servi&ccedil;o Militar</a> | <a href="http://dsm.dgp.eb.mil.br/">Direitos Reservados</a> <br/>          <a href="https://www.facebook.com/exercito"  style="font-size: 0.75em"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a> |           <a href="https://www.instagram.com/alistamento_oficial" style="font-size: 0.75em"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a> |          <a href="https://www.linkedin.com/company/exercito"  style="font-size: 0.75em"><i class="fab fa-linkedin" aria-hidden="true"></i> Linkedin</a> |          <a href="https://www.youtube.com/user/CCSE1982"   style="font-size: 0.75em"><i class="fab fa-youtube" aria-hidden="true"></i> Youtube</a>        </div>      </div>    </div>    </div>  </footer>  <a id="totop" href="#totop"><i class="fas fa-angle-double-up" aria-hidden="true"></i></a>  <!-- js -->  <script type="text/javascript" src="../../../cdn.jsdelivr.net/npm/bootstrap%405.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>  <script type="text/javascript" src="../../assets/lib/components-modernizr/modernizr.js"></script>  <script type="text/javascript" src="../../assets/lib/imagesloaded/imagesloaded.min.js"></script>  <script type="text/javascript" src="../../assets/lib/alertify/alertify.min.js"></script>  <script type="text/javascript" src="../../assets/js/alistamento.js"></script>  <script type="text/javascript" src="../../assets/js/main.js"></script>  <script type="text/javascript">   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */    var _paq = window._paq || [];    _paq.push(['trackPageView']);    _paq.push(['enableLinkTracking']);    (function() {      var u="http://matomo-cds.eb.mil.br/";      _paq.push(['setTrackerUrl', u+'matomo.php']);      _paq.push(['setSiteId', '8']);      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);    })();        $(document).ready(function(){      alertify.defaults.transition = "slide";      alertify.defaults.theme.ok = "btn btn-success";      alertify.defaults.theme.cancel = "btn btn-danger";      alertify.defaults.theme.input = "form-control";    });  </script> </body>
+<!-- Mirrored from alistamento.eb.mil.br/servico/jsm/reparticoesConsulares by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Sep 2025 03:47:10 GMT -->
+</html>

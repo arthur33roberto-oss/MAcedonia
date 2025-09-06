@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+alistamento.eb.mil.br	TRUE	/	FALSE	1999999999	JSESSIONID	449AC00AE32717DBAE291C63E98E1909
+alistamento.eb.mil.br	TRUE	/	FALSE	1999999999	_backend	871b9865cc39b904
+alistamento.eb.mil.br	TRUE	/	FALSE	1999999999	TS01a0ef79	01ca03832a989dc604862032c614320153c758430d9e1de2540c3b2747edf9745bf4d40b2f421bc7bf1a8e421909ab2271a90b3f0369a4beaa156a9556a1c92bee319f269e
+
